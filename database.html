@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>database</title>
+    <style media="screen">
+      input, textarea {
+        display: block;
+        margin: 10px;
+      }
+      form {
+        display: grid;
+        grid-template-columns: 650px 650px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="db_process.py" method="post">
+      <div>
+        <input type="text" name="name" placeholder="name">
+        <textarea name="description" rows="30" cols="80" placeholder="description"></textarea>
+      </div>
+      <div>
+        <input type="text" name="q1" placeholder="q1">
+        <input type="text" name="q2" placeholder="q2">
+        <input type="text" name="q3" placeholder="q3">
+        <input type="text" name="q4" placeholder="q4">
+        <input type="text" name="q5" placeholder="q5">
+        <input type="text" name="type" placeholder="type">
+        <textarea name="imglink" rows="3" cols="80" placeholder="img link"></textarea>
+        <input type="submit" value="확인">
+      </div>
+    </form>
+  </body>
+</html>
